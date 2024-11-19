@@ -1,18 +1,53 @@
 #include <Arduino.h>
+#include <SD.h>
 
-// put function declarations here:
-int myFunction(int, int);
+#define sdCardPinChipSelect   53                          
+#define nomDuFichier "temp.xls"
+
+File monFichier;
+
+
+// Broches
+const int pinAnalog = A0; // Lecture analogique
+const int pinDigital = 2; // Lecture numérique (si utilisé)
 
 void setup() {
-  // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+  Serial.begin(9600);       // Initialisation du port série
+  pinMode(pinDigital, INPUT);
+
+  Serial.println(F("Étape 1 : Initialisation de la carte SD :"));
+  if (!SD.begin(sdCardPinChipSelect)) {
+    Serial.println(F("Échec de l'initialisation !"));
+    while (1);   
+  }
+  Serial.println(F("Initialisation terminée."));
+  Serial.println();
+
+  monFichier = SD.open(nomDuFichier, FILE_WRITE);
+  if (monFichier) {
+    monFichier.close();  // Fermer immédiatement le fichier
+    Serial.println(F("Fichier de températures prêt à enregistrer."));
+  } else {
+    Serial.println(F("Échec de l'ouverture du fichier pour initialisation !"));
+    while (1);
+  }
+  
 }
+
 
 void loop() {
-  // put your main code here, to run repeatedly:
-}
+  int valeurAnalogique = analogRead(pinAnalog); // Lecture analogique
+  int etatDigital = digitalRead(pinDigital);   // Lecture numérique
 
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
+  // Conversion en pourcentage (optionnel)
+  float humidite = map(valeurAnalogique, 0, 1023, 100, 0);
+
+  Serial.print("Humidité (analogique) : ");
+  Serial.print(humidite);
+  Serial.println("%");
+
+  Serial.print("État (numérique) : ");
+  Serial.println(etatDigital == HIGH ? "Sec" : "Humide");
+
+  delay(1000); // Pause de 1 seconde
 }
