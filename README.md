@@ -1,1 +1,1 @@
-![Texte alternatif](photos/CapteurSol.jpg)
+<img src="photos/CapteurSol.jpg" alt="Description" width="500">
