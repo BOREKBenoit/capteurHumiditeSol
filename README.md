@@ -40,5 +40,5 @@
 #### Capteur d'humidité et de température de l'air : 
 <img src="photos/CapteurTemperature.jpg" alt="Description" width="150">
 
-#### Capteur d'humidité et de température de l'air : 
-<img src="photos/CapteurTemperature.jpg" alt="Description" width="150">
+#### Arduino avec carte SD : 
+<img src="photos/ArduinoEtSD.jpg" alt="Description" width="150">
