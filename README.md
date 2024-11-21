@@ -1,1 +1,1 @@
-<img src="photos/CapteurSol.jpg" alt="Description" width="500">
+<img src="photos/CapteurSol.jpg" alt="Description" width="100">
