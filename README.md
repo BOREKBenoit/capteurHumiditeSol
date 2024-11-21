@@ -11,7 +11,7 @@
 
 ## Exemple de courbes de l'humidité de l'air et du sol et la température ambiante :
 
-<img src="photos/graphique.png" alt="Description" width="150">
+<img src="photos/graphique.png" alt="Description" width="200">
 
 #### Si vous voulez refaire le projet la liste des matériels et les branchement sont indiqué ci-dessous : 
 
