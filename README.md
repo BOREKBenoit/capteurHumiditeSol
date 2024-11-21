@@ -1,1 +1,1 @@
-![Texte alternatif](photos\CapteurSol.jpg)
+![Texte alternatif](photos/CapteurSol.jpg)
