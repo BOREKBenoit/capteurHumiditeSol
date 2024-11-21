@@ -6,7 +6,7 @@
 
 ### Matériels :
 #### 1. Capteur DHT11
-#### 2. Capteur du sol "MH-Sensor-Series"
-#### 3. Module MH-SD Card Module
+2. Capteur du sol "MH-Sensor-Series"
+3. Module MH-SD Card Module
 
 <img src="photos/CapteurSol.jpg" alt="Description" width="150">
