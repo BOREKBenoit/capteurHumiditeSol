@@ -9,6 +9,10 @@
 
 #### Le code arduino en lui même ce trouve dans le dossier src et c'est le fichier main.cpp qui contient le code.
 
+## Exemple de courbes de l'humidité de l'air et du sol et la température ambiante :
+
+<img src="photos/graphique.png" alt="Description" width="150">
+
 #### Si vous voulez refaire le projet la liste des matériels et les branchement sont indiqué ci-dessous : 
 
 
@@ -42,3 +46,4 @@
 
 #### Arduino avec carte SD : 
 <img src="photos/ArduinoEtSD.jpg" alt="Description" width="150">
+
