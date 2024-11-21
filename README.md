@@ -6,7 +6,23 @@
 
 ### Matériels :
 #### 1. Capteur DHT11
-2. Capteur du sol "MH-Sensor-Series"
-3. Module MH-SD Card Module
+#### 2. Capteur du sol "MH-Sensor-Series"
+#### 3. Module MH-SD Card Module
+#### 4. Arduino Mega 2560
+
+## Connexions des composants
+
+| Composant          | Broche Arduino | Broche Composant        | Description                                   |
+|---------------------|----------------|--------------------------|-----------------------------------------------|
+| Carte SD            | 3.3V           | 3.3V                    | Alimentation pour le module SD               |
+| Carte SD            | 53             | CS                      | Chip Select (SPI)                            |
+| Carte SD            | 52             | SCK                     | Serial Clock (SPI)                           |
+| Carte SD            | 50             | MISO                    | Master In Slave Out (SPI)                    |
+| Carte SD            | 51             | MOSI                    | Master Out Slave In (SPI)                    |
+| DHT11               | 5V             | 5V                      | Alimentation pour le capteur DHT11           |
+| DHT11               | 3              | Data                    | Broche Data du capteur DHT11                 |
+| MH Sensor Series    | 5V             | 5V                      | Alimentation pour le capteur d'humidité du sol |
+| MH Sensor Series    | A0             | A0                      | Lecture analogique de l'humidité du sol      |
+
 
 <img src="photos/CapteurSol.jpg" alt="Description" width="150">
