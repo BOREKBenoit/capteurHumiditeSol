@@ -32,6 +32,13 @@
 | MH Sensor Series    | 5V             | 5V                      | Alimentation pour le capteur d'humidité du sol |
 | MH Sensor Series    | A0             | A0                      | Lecture analogique de l'humidité du sol      |
 
+## Photos des composants utilisé :
 
-
+#### Capteur d'humidité du sol :
 <img src="photos/CapteurSol.jpg" alt="Description" width="150">
+
+#### Capteur d'humidité et de température de l'air : 
+<img src="photos/CapteurTemperature.jpg" alt="Description" width="150">
+
+#### Capteur d'humidité et de température de l'air : 
+<img src="photos/CapteurTemperature.jpg" alt="Description" width="150">
